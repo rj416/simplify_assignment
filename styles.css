@@ -1,0 +1,60 @@
+/* height of the entire page and  default font */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* setting content in the middle of the page and setting background color */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E2E2E;
+}
+
+/* outer Container of  the square, defining  size and position */
+.container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+/* Square shape, rotated to look like a diamond*/
+.square {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg); /* Rotate the outer square to make it a diamond */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 24px solid; /* Apply 24px thick borders */
+    border-color: #ef8951 #52baa7 #95b9dd #52baa7; /* Different colors for each side of the border */
+}
+
+/* Inner text positioned at the center of the diamond */
+.innertext {
+    position: absolute;
+    width: 180px; 
+    text-align: center;
+    color: white;
+    transform: rotate(-45deg); /* Rotate text back to normal alignment with respect to the outer diamond */
+}
+
+/* Stylng the heading text */
+.innertext h1 {
+    font-size: 24px;
+    font-weight: bold; /* Make the heading bold */
+}
+
+/* Styling  the color for the heading */
+.innertext h1 span {
+    color: gray; /* Change the color of '&' to gray */
+}
+
+/* Styling  the paragraph text under the heading */
+.innertext p {
+    font-size: 14px;
+    margin-top: 5px; /* Small margin to separate from the heading */
+    color: #B8B8B8; /* Light gray text for the paragraph */
+}
